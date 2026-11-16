@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gaurav Kumar Pal – Network Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0a0e13;--panel:#10161d;--line:#1e2833;--tx:#d6dfe9;--mu:#7d8b9c;--g:#4ade80;--a:#fbbf24;--c:#38bdf8;--r:#f87171;
+--s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2.5rem;--s5:5rem;
+--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html.light{color-scheme:light;--bg:#f4f6fa;--panel:#ffffff;--line:#d9e0ea;--tx:#1a2332;--mu:#5b6879;--g:#16a34a;--a:#d97706;--c:#0284c7;--r:#dc2626}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;height:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif;background-image:radial-gradient(circle at 50% -10%,rgba(74,222,128,.07),transparent 45%),linear-gradient(rgba(127,127,127,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(127,127,127,.06) 1px,transparent 1px);background-size:auto,40px 40px,40px 40px}
+a{color:var(--c)}
+:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.col{width:100%;max-width:60rem;margin:0 auto;padding:0 var(--s3)}
+header{position:sticky;top:0;z-index:10;background:rgba(10,14,19,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .col{display:flex;justify-content:space-between;align-items:center;height:3.25rem;gap:var(--s2)}
+.dots{display:flex;gap:6px}.dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.dots i:nth-child(1){background:var(--r)}.dots i:nth-child(2){background:var(--a)}.dots i:nth-child(3){background:var(--g)}
+nav{display:flex;gap:var(--s1);overflow-x:auto;font:400 .85rem var(--mono)}
+nav a{color:var(--mu);text-decoration:none;padding:.35rem .6rem;border-radius:.35rem;white-space:nowrap}
+nav a:hover{color:var(--tx)}nav a.on{color:var(--g);background:rgba(74,222,128,.1)}
+.hero{padding:var(--s5) 0 var(--s4)}
+.win{background:var(--panel);border:1px solid var(--line);border-radius:.75rem;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.win .bar{display:flex;gap:var(--s2);align-items:center;padding:.65rem var(--s2);border-bottom:1px solid var(--line);color:var(--mu);font:400 .8rem var(--mono)}
+.out{padding:var(--s3);font:400 .92rem/1.7 var(--mono);height:23rem;overflow-y:auto}
+.out p{margin:0 0 .15rem;white-space:pre-wrap;word-break:break-word}
+.p{color:var(--g)}.m{color:var(--mu)}.hl{color:var(--a)}.cy{color:var(--c)}
+.big{font:700 clamp(2.2rem,7vw,3.75rem)/1.05 var(--mono);letter-spacing:-.03em;margin:var(--s1) 0 var(--s2);color:var(--tx)}
+.inp{display:flex;gap:.6rem;align-items:center;border-top:1px solid var(--line);padding:.8rem var(--s3);font:400 .92rem var(--mono)}
+.inp input{flex:1;min-width:0;background:none;border:0;color:var(--tx);font:inherit;caret-color:var(--g)}
+.inp input:focus{outline:0}
+.chips{display:flex;flex-wrap:wrap;gap:var(--s1);margin-top:var(--s2)}
+.chips button{background:none;border:1px solid var(--line);color:var(--mu);font:400 .82rem var(--mono);padding:.35rem .7rem;border-radius:.35rem;cursor:pointer}
+.chips button:hover{color:var(--g);border-color:var(--g)}
+section{padding:var(--s5) 0 0}
+h2{font:500 1.15rem var(--mono);margin:0 0 var(--s3);color:var(--g);display:flex;align-items:center;gap:var(--s2)}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+h2 span{color:var(--mu)}
+.lead{max-width:42rem;margin:0 0 var(--s2);color:var(--tx)}
+.kv{display:grid;grid-template-columns:9rem 1fr;gap:var(--s2) var(--s3);align-items:start}
+.kv dt{font:500 .88rem var(--mono);color:var(--a);padding-top:.3rem;margin:0}
+.kv dd{margin:0;display:flex;flex-wrap:wrap;gap:var(--s1)}
+.t{font:400 .84rem var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:.35rem;padding:.25rem .6rem;transition:border-color .15s,color .15s}
+.t:hover{border-color:var(--g);color:var(--g)}
+.job{display:grid;grid-template-columns:9rem 1fr;gap:var(--s3);padding:0 0 var(--s4)}
+.job:last-child{padding:0}
+.when{font:400 .85rem/1.5 var(--mono);color:var(--mu);padding-top:.3rem}
+.job h3{font:500 1.1rem/1.35 var(--mono);margin:0}
+.job .co{color:var(--c);font-size:.95rem;margin:.15rem 0 var(--s2)}
+ul{margin:0;padding:0;list-style:none}
+li{position:relative;padding-left:1.4rem;margin:0 0 .5rem;max-width:42rem}
+li::before{content:">";position:absolute;left:0;color:var(--g);font-family:var(--mono)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:.6rem;padding:var(--s3);display:flex;flex-direction:column;gap:var(--s2);transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--g);transform:translateY(-3px)}
+.card h3{font:500 1.05rem/1.35 var(--mono);margin:0}
+.card .st{font:400 .8rem var(--mono);color:var(--c);margin:0}
+.card li{font-size:.94rem;margin:0 0 .6rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.two .card h3{font-size:1rem}
+.two p{margin:0;color:var(--mu)}
+.cta{display:flex;flex-direction:column;gap:var(--s2);align-items:flex-start}
+.cta button,.cta a{font:500 1.05rem var(--mono);background:var(--panel);border:1px solid var(--line);color:var(--tx);padding:.8rem var(--s3);border-radius:.5rem;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}
+.cta button:hover,.cta a:hover{border-color:var(--g);color:var(--g)}
+footer{margin-top:var(--s5);padding:var(--s3) 0 var(--s4);border-top:1px solid var(--line);color:var(--mu);font:400 .82rem var(--mono)}
+#toast{position:fixed;left:50%;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));transform:translate(-50%,200%);background:var(--g);color:#06210f;font:500 .88rem var(--mono);padding:.6rem 1rem;border-radius:.4rem;transition:transform .3s}
+#toast.s{transform:translate(-50%,0)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);margin-top:var(--s4);padding:var(--s3) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats b{display:block;font:700 2.1rem/1 var(--mono);color:var(--g);margin-bottom:var(--s1)}
+.stats span{font:400 .82rem var(--mono);color:var(--mu)}
+.now,.lab{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.now{margin-top:var(--s3)}
+.net{display:grid;grid-template-columns:auto 1fr auto;gap:var(--s2);align-items:center;margin:var(--s1) 0}
+.node{font:500 .78rem/1.4 var(--mono);border:1px solid var(--line);border-radius:.4rem;padding:.7rem .6rem;text-align:center;background:var(--bg)}
+.trk{position:relative;height:2px;background:var(--line)}
+.dio{position:absolute;left:50%;top:-14px;width:3px;height:30px;background:var(--a);border-radius:2px}
+.pk{position:absolute;top:-5px;left:0;width:12px;height:12px;border-radius:50%;background:var(--g);opacity:0}
+.pk.x{background:var(--r)}
+.log{font:400 .82rem/1.6 var(--mono);color:var(--mu);min-height:3.3rem;margin:0}
+.row{display:flex;gap:var(--s1);flex-wrap:wrap}
+.b2{background:none;border:1px solid var(--line);color:var(--tx);font:400 .82rem var(--mono);padding:.45rem .85rem;border-radius:.35rem;cursor:pointer}
+.b2:hover,.b2[aria-pressed="true"]{border-color:var(--g);color:var(--g)}
+pre.code{margin:0;padding:var(--s2);background:var(--bg);border:1px solid var(--line);border-radius:.4rem;font:400 .82rem/1.6 var(--mono);color:var(--tx);overflow-x:auto;min-height:9.5rem}
+.note{font:400 .78rem/1.5 var(--mono);color:var(--mu);margin:0}
+@media (max-width:52rem){.stats{grid-template-columns:1fr 1fr}.now,.lab{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.kv,.job{grid-template-columns:1fr;gap:var(--s1)}.kv dt{padding:0}.job{padding-bottom:var(--s4)}.dots{display:none}.out{height:21rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="col"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+<button id="theme" class="b2" style="margin-left:auto">theme: dark</button>
+<nav aria-label="Sections"><a href="#about">about</a><a href="#skills">skills</a><a href="#work">experience</a><a href="#projects">projects</a><a href="#labs">labs</a><a href="#contact">contact</a></nav></div></header>
+
+<main class="col">
+<div class="hero">
+<div class="win">
+<div class="bar"><span>gaurav@netlab: ~</span></div>
+<div class="out" id="out" aria-live="polite"></div>
+<form class="inp" id="f" autocomplete="off"><span class="p">$</span><input id="in" aria-label="Type a command, for example help" spellcheck="false" autocapitalize="off" placeholder="type help"></form>
+</div>
+<div class="chips" aria-label="Quick commands"><button data-c="whoami">whoami</button><button data-c="skills">skills</button><button data-c="experience">experience</button><button data-c="projects">projects</button><button data-c="education">education</button><button data-c="neofetch">neofetch</button><button data-c="contact">contact</button></div>
+</div>
+
+<div class="stats"><div><b data-n="2" data-s="+">2+</b><span>years in networking</span></div><div><b data-n="3">3</b><span>teams worked with</span></div><div><b data-n="3">3</b><span>home-lab builds</span></div><div><b data-n="10" data-s="+">10+</b><span>protocols and services</span></div></div>
+<section id="about"><h2><span>~/</span>about</h2>
+<p class="lead">I’m a network engineer with hands-on experience in routing, switching, satellite and terrestrial infrastructure, and network automation with Python. I configure and troubleshoot Cisco, Nivetti and Tejas MPLS-TP devices, with solid fundamentals in BGP, OSPF, EIGRP, VLANs, VPNs and IPv4/IPv6.</p>
+<p class="lead">Outside of work I build Linux lab infrastructure: self-hosted collaboration platforms, custom Linux ISO images and one-way data transfer systems.</p>
+<div class="now"><div class="card"><h3>Right now</h3><ul><li>Maintaining internal network labs at WESEE.</li><li>Supporting developers on Indian Navy projects.</li></ul></div><div class="card"><h3>Looking for</h3><ul><li>Large-scale, reliable network systems.</li><li>Work close to the hardware and the command line.</li></ul></div></div></section>
+
+<section id="skills"><h2><span>~/</span>skills</h2>
+<dl class="kv">
+<dt>networking</dt><dd><span class="t">LAN/WAN</span><span class="t">TCP/IP</span><span class="t">BGP</span><span class="t">OSPF</span><span class="t">EIGRP</span><span class="t">IPv4/IPv6</span><span class="t">VLANs</span><span class="t">VPNs</span><span class="t">VAPT resolution</span></dd>
+<dt>services</dt><dd><span class="t">DNS</span><span class="t">DHCP</span><span class="t">FTP</span><span class="t">HTTP/HTTPS</span><span class="t">SSH</span><span class="t">HSRP</span><span class="t">VRRP</span><span class="t">TCP/UDP</span></dd>
+<dt>hardware</dt><dd><span class="t">Cisco routers and switches</span><span class="t">Nivetti routers</span><span class="t">Tejas MPLS-TP</span><span class="t">Firewalls</span></dd>
+<dt>linux</dt><dd><span class="t">Linux administration</span><span class="t">VMware Workstation</span><span class="t">Custom ISO builds</span><span class="t">Nextcloud</span><span class="t">Gitea</span></dd>
+<dt>tools</dt><dd><span class="t">Tejas NMS/EMS</span><span class="t">GNS3</span><span class="t">Packet Tracer</span><span class="t">Infraon NMS</span><span class="t">Grafana</span><span class="t">Wireshark</span><span class="t">BlueCoat</span><span class="t">Jovian</span><span class="t">PuTTY</span></dd>
+<dt>automation</dt><dd><span class="t">Python</span><span class="t">Network scripting</span><span class="t">API-based automation</span></dd>
+</dl></section>
+
+<section id="work"><h2><span>~/</span>experience</h2>
+<div class="job"><div class="when">Sept 2025 –<br>present</div><div><h3>Assistant Developer, WESEE (Indian Navy)</h3><p class="co">Jangoo Technologies</p><ul>
+<li>Contribute to networking and development work for WESEE, a technical establishment under the Indian Navy.</li>
+<li>Maintain internal network labs and assist developers with project implementation.</li>
+<li>Connect networking requirements to development tasks.</li></ul></div></div>
+<div class="job"><div class="when">Mar 2025 –<br>Sept 2025</div><div><h3>Network Engineer</h3><p class="co">Hughes Communication India Limited (via KMG Tech Solution Pvt. Ltd.)</p><ul>
+<li>Configured, maintained and troubleshot VSAT and terrestrial network infrastructure.</li>
+<li>Monitored performance with Grafana, BlueCoat and Jovian, and analyzed signal attenuation.</li>
+<li>Worked with cross-functional teams to deploy satellite communication solutions for enterprise clients.</li></ul></div></div>
+<div class="job"><div class="when">Sept 2024 –<br>Mar 2025</div><div><h3>Apprentice, PowerGrid Corporation of India Limited</h3><p class="co">NEC Corporation of India</p><ul>
+<li>Helped the NOC team configure and deploy Nivetti routers and Tejas MPLS-TP1400/1600 devices.</li>
+<li>Supported ground teams in setting up telecom networks to specification.</li>
+<li>Talked with clients to troubleshoot issues and deliver timely fixes.</li></ul></div></div>
+</section>
+
+<section id="projects"><h2><span>~/</span>projects</h2>
+<div class="grid">
+<div class="card"><h3>Data diode: one-way transfer</h3><p class="st">Linux · Networking · Python</p><ul>
+<li>Enforces one-way flow between isolated network segments, mirroring air-gapped transfer needs.</li>
+<li>Blocks return-path traffic at host and network level, verified end to end.</li>
+<li>Scripted validation and logging check data integrity.</li></ul></div>
+<div class="card"><h3>Self-hosted Nextcloud and Gitea</h3><p class="st">Linux · Docker/VM · Nextcloud · Gitea</p><ul>
+<li>File sync and Git hosting on a local network for lab projects.</li>
+<li>Static addressing, reverse proxy and access rules so LAN clients can reach both.</li>
+<li>Managed users, storage and basic backups.</li></ul></div>
+<div class="card"><h3>Custom Linux ISO</h3><p class="st">Linux · ISO remastering · Shell</p><ul>
+<li>Autologin and automatic root session on boot.</li>
+<li>Rebuilt after changing boot and init configuration; tested on VMs and physical hardware.</li>
+<li>Cut setup time on repeated lab rebuilds.</li></ul></div>
+</div></section>
+
+<section id="labs"><h2><span>~/</span>labs</h2>
+<div class="lab">
+<div class="card"><h3>Try the data diode</h3><p class="note">A simplified demo of the idea behind my data diode project.</p>
+<div class="net"><div class="node">Network A<br>source</div><div class="trk"><div class="dio"></div><div class="pk" id="pk"></div></div><div class="node">Network B<br>isolated</div></div>
+<div class="row"><button class="b2" id="fw">Send file A → B</button><button class="b2" id="bw">Reply B → A</button></div>
+<p class="log" id="lg" aria-live="polite">Pick a direction.</p></div>
+<div class="card"><h3>Config snippets</h3><p class="note">Illustrative Cisco IOS examples with documentation IP addresses, not real device configs.</p>
+<div class="row" role="group" aria-label="Choose a snippet"><button class="b2 tab" data-k="OSPF" aria-pressed="true">OSPF</button><button class="b2 tab" data-k="BGP" aria-pressed="false">BGP</button><button class="b2 tab" data-k="VLAN" aria-pressed="false">VLAN</button><button class="b2" id="cc">Copy</button></div>
+<pre class="code" id="code"></pre></div>
+</div></section>
+
+<section id="education"><h2><span>~/</span>education</h2>
+<div class="two">
+<div class="card"><h3>B.Tech, Computer Science and Engineering</h3><p>ITM University, Gwalior<br>GPA 7.3/10 · Aug 2019 – May 2023</p></div>
+<div class="card"><h3>Certifications</h3><p>Industrial Training in CCNA (Routing and Switching), Network Bulls<br>Internship Certificate, NEC Corporation of India</p></div>
+</div></section>
+
+<section id="contact"><h2><span>~/</span>contact</h2>
+<div class="cta">
+<button data-copy="palgaurav1812@gmail.com">palgaurav1812@gmail.com</button>
+<button data-copy="+918305381041">+91 83053 81041</button>
+<a href="https://www.linkedin.com/in/grv-pal/">www.linkedin.com/in/grv-pal/</a>
+</div></section>
+</main>
+<div class="col"><footer>© 2026 Gaurav Kumar Pal</footer></div>
+<div id="toast" role="status"></div>
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var out=$('#out'),inp=$('#in'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function line(h,c){var p=document.createElement('p');if(c)p.className=c;p.innerHTML=h;out.appendChild(p);out.scrollTop=out.scrollHeight}
+function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+var C={
+help:function(){line('commands: <span class="hl">whoami skills experience projects education neofetch ls contact clear</span>');line('Tip: Up arrow repeats a command, Tab completes. There is one secret command.','m')},
+whoami:function(){line('<div class="big">Gaurav Kumar Pal</div>');line('Network engineer','cy');line('Routing, switching, MPLS-TP, VSAT, automation,');line('Linux labs and Python automation.','m');line('Gurugram, India','m')},
+skills:function(){line('networking  <span class="m">BGP OSPF EIGRP VLANs VPNs IPv4/IPv6</span>');line('hardware    <span class="m">Cisco, Nivetti, Tejas MPLS-TP</span>');line('linux       <span class="m">administration, custom ISOs, Nextcloud, Gitea</span>');line('automation  <span class="m">Python, API-based scripting</span>')},
+experience:function(){line('<span class="hl">2025-09 → now</span>   WESEE (Indian Navy), Jangoo Technologies');line('<span class="hl">2025-03 → 2025-09</span> Network Engineer, Hughes Communication India');line('<span class="hl">2024-09 → 2025-03</span> Apprentice, NEC Corporation of India')},
+projects:function(){line('1. Data diode: one-way data transfer');line('2. Self-hosted Nextcloud and Gitea');line('3. Custom Linux ISO with autologin and auto-root')},
+contact:function(){line('email    <a href="mailto:palgaurav1812@gmail.com">palgaurav1812@gmail.com</a>');line('phone    +91 83053 81041');line('linkedin <a href="https://www.linkedin.com/in/grv-pal/">www.linkedin.com/in/grv-pal/</a>')},
+education:function(){line('B.Tech, Computer Science and Engineering');line('ITM University, Gwalior · GPA 7.3/10 · 2019–2023','m');line('CCNA (Routing and Switching) training, Network Bulls','cy');line('Internship certificate, NEC Corporation of India','cy')},
+neofetch:function(){line('<span class="p">gaurav</span>@<span class="p">netlab</span>');line('------------');line('<span class="hl">Role</span>    Network Engineer');line('<span class="hl">Focus</span>   routing, switching, MPLS-TP, VSAT');line('<span class="hl">Lab</span>     Nextcloud, Gitea, data diode');line('<span class="hl">Code</span>    Python, shell');line('<span class="hl">Base</span>    Gurugram, India')},
+ls:function(){line('about  skills  experience  projects  labs  education  contact','cy')},
+'sudo hire gaurav':function(){line('[sudo] permission granted.','p');line('Opening a draft to palgaurav1812@gmail.com ...','m');setTimeout(function(){location.href='mailto:palgaurav1812@gmail.com?subject=Opportunity%20for%20Gaurav'},900)},
+clear:function(){out.innerHTML=''}};
+function run(v){v=v.trim().toLowerCase();if(!v)return;line('<span class="p">$</span> '+esc(v));if(C[v])C[v]();else line('command not found: '+esc(v)+'. Type <span class="hl">help</span>.','m')}
+function boot(){var steps=[['$ ssh gaurav@netlab','p'],['Connected. Last login: Sept 2025, WESEE lab','m'],['Type help, or tap a command below.','m']];
+var i=0;(function n(){if(i<steps.length){line(steps[i][0],steps[i][1]);i++;setTimeout(n,rm?0:450)}else{C.whoami()}})()}
+boot();
+var themeBtn=document.getElementById('theme');
+function applyTheme(t){document.documentElement.classList.toggle('light',t==='light');themeBtn.textContent='theme: '+t;localStorage.setItem('theme',t)}
+applyTheme(localStorage.getItem('theme')||'dark');
+themeBtn.onclick=function(){applyTheme(document.documentElement.classList.contains('light')?'dark':'light')};
+var hist=[],hi=0;
+$('#f').onsubmit=function(e){e.preventDefault();if(inp.value.trim()){hist.push(inp.value);hi=hist.length}run(inp.value);inp.value=''};
+inp.addEventListener('keydown',function(e){if(e.key==='ArrowUp'&&hist.length){e.preventDefault();hi=Math.max(0,hi-1);inp.value=hist[hi]}else if(e.key==='ArrowDown'){e.preventDefault();hi=Math.min(hist.length,hi+1);inp.value=hist[hi]||''}else if(e.key==='Tab'&&inp.value){e.preventDefault();var m=Object.keys(C).filter(function(k){return k.indexOf(inp.value.toLowerCase())===0});if(m.length===1)inp.value=m[0]}});
+$$('.chips button').forEach(function(b){b.onclick=function(){run(b.dataset.c)}});
+var secs=$$('main section'),ls=$$('nav a');
+function sp(){var c='';secs.forEach(function(s){if(s.getBoundingClientRect().top<innerHeight*.35)c=s.id});if(c==='education')c='work';ls.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+c)})}
+addEventListener('scroll',sp,{passive:true});sp();
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cio.unobserve(e.target);var el=e.target,n=+el.dataset.n,sf=el.dataset.s||'',k=0;if(rm){el.textContent=n+sf;return}var iv=setInterval(function(){k++;el.textContent=k+(k===n?sf:'');if(k>=n)clearInterval(iv)},110)})},{threshold:.6});
+$$('.stats b').forEach(function(b){b.textContent='0';cio.observe(b)});
+var pk=$('#pk'),lg=$('#lg'),busy=false;
+function fly(a,b,cls,pre,msg){if(busy)return;busy=true;lg.innerHTML='<span class="p">$</span> '+pre;pk.className='pk'+(cls?' '+cls:'');pk.style.transition='none';pk.style.left=a;pk.style.opacity=1;void pk.offsetWidth;pk.style.transition=rm?'none':'left .9s linear';pk.style.left=b;setTimeout(function(){lg.innerHTML+='<br>'+msg;pk.style.opacity=0;busy=false},rm?0:950)}
+$('#fw').onclick=function(){fly('0','calc(100% - 12px)','','send report.txt','<span class="p">Delivered.</span> Network B has the file.')};
+$('#bw').onclick=function(){fly('calc(100% - 12px)','calc(50% + 4px)','x','reply ack','<span style="color:var(--r)">Blocked at the diode.</span> There is no return path.')};
+var snip={OSPF:'router ospf 1\n router-id 1.1.1.1\n network 192.0.2.0 0.0.0.255 area 0\n passive-interface default\n no passive-interface GigabitEthernet0/0',BGP:'router bgp 65001\n neighbor 192.0.2.2 remote-as 65002\n address-family ipv4\n  network 198.51.100.0 mask 255.255.255.0\n  neighbor 192.0.2.2 activate',VLAN:'vlan 10\n name USERS\ninterface GigabitEthernet0/1\n switchport mode access\n switchport access vlan 10'},sk='OSPF';
+function setS(k){sk=k;$('#code').textContent=snip[k];$$('.tab').forEach(function(t){t.setAttribute('aria-pressed',t.dataset.k===k)})}
+$$('.tab').forEach(function(t){t.onclick=function(){setS(t.dataset.k)}});setS('OSPF');
+$('#cc').onclick=function(){var v=snip[sk];function ok(){tt.textContent='Copied '+sk+' snippet';tt.classList.add('s');setTimeout(function(){tt.classList.remove('s')},1800)}if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(ok,function(){})}};
+var tt=$('#toast');
+$$('[data-copy]').forEach(function(b){b.onclick=function(){var v=b.dataset.copy,f=function(){location.href=(v.indexOf('@')>0?'mailto:':'tel:')+v};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){tt.textContent='Copied '+v;tt.classList.add('s');setTimeout(function(){tt.classList.remove('s')},1800)},f)}else f()}});
+})();
+</script>
+</body>
+</html>
